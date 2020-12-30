@@ -30,10 +30,6 @@ a:hover {
   color: rgb(196, 0, 196);
 }
 
-/* div {
-  border: 2px solid white;
-} */
-
 .message {
   height: 100%;
   display: flex;
@@ -102,7 +98,6 @@ button:hover {
   width: 95%;
   height: 1px;
   display: none;
-  opacity: 0%;
   position: relative;
   overflow: hidden;
   margin: auto;
@@ -111,7 +106,7 @@ button:hover {
 .activeContent {
   width: 95%;
   height: 60vh;
-  opacity: 100%;
+  opacity: 1;
   position: relative;
   animation-name: content_anim;
   animation-duration: 2s;
@@ -124,7 +119,7 @@ button:hover {
 @keyframes content_anim {
   0% {height: 0; opacity: 0;}
   50% {opacity: 0;}
-  100% {height: 60vh; opacity: 100%;}
+  100% {height: 60vh; opacity: 1;}
 }
 
 .navigation {

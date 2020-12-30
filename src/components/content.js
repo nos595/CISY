@@ -67,7 +67,7 @@ const Content = (props) => {
             
             // Error "handling" ;)
             default:
-                return <div className={("message")}><p><b>Oh dear!</b> Well this is embarassing, there's no content here...<br /><br />Not exactly sure how you ended up here, it shouldn't be possible.<br /><br />Dev missed something, clearly. Go shout at him on <a href={("http://www.twitter.com/nos595")} target={("new")}>Twitter</a>!</p></div>;
+                return <div className={("message")}><p><b>Oh dear!</b> Well this is embarassing, there's no content here...<br /><br />Not exactly sure how you ended up here, it shouldn't be possible.<br /><br />Dev missed something, clearly. Go shout at him on <a href={("http://www.twitter.com/nos595")} target={("new")}>Twitter</a>!<br /><br />({props.page})</p></div>;
         }
     }
 

@@ -132,3 +132,17 @@ button:hover {
   align-items: center;
   justify-content: space-around;
 }
+
+@media screen and (orientation:portrait){
+  .title {
+    font-size: 15vw;
+  }
+
+  .header {
+    height: 40vh;
+  }
+
+  button {
+    font-size: 6vh;
+  }
+}

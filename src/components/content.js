@@ -26,7 +26,7 @@ const Content = (props) => {
                 <b>Cookies?</b><br />
                 Nah, I'm not interested in tracking you or selling you anything. Cookies are for eating.<br />For the site to function, it stores two bits of info on your device - the time of your next cigarette and the length of the wait time - that's it. If you want to get rid of that, just click reset and I'll wipe everything.<br />The code is freely available on <a href={("https://github.com/nos595/CISY")} target={("new")}>GitHub</a> for anyone inclined to dig through it.<br /><br />
                 <b>Can I hire you?</b><br />
-                You absolutely can! I have very little formal training and no formal experience, but if you can see past that, I am very much in the market! I've been sat behind a keyboard since I was six and have experience in JS, PHP, SQL, HTML & CSS. This is my first proper foray into React and I'm enjoying it a lot!<br />Get in touch at jonmatthewbarton(at)gmail(dot)com if you want to know more.<br /><br />...Okay, that last one isn't frequently asked, but a guy can dream! =P
+                You absolutely can! I have very little formal training and no formal experience, but if you can see past that, I am very much in the market! I've been sat behind a keyboard since I was six and have experience in JS, PHP, SQL, HTML & CSS. This is my first proper foray into React and I'm enjoying it a lot!<br />Get in touch at jonmatthewbarton (at) gmail (dot) com if you want to know more.<br /><br />...Okay, that last one isn't frequently asked, but a guy can dream! =P
             </p>;
 
             // Starting with a new user

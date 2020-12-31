@@ -160,4 +160,11 @@ button:hover {
   .navigation {
     height: 15vh;
   }
+
+  .yes {
+    font-size: 25vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: greenyellow;
+    font-weight: bolder;
+  }
 }

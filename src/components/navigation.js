@@ -15,7 +15,7 @@ const Navigation = (props) => {
         if(props.active){
             but = <button onClick={handleClick} name={("reset")}>Reset</button>;
         }else{
-            but = <button onClick={handleClick} name={("start")}>Get started!</button>;
+            but = <button onClick={handleClick} name={("start")}>Get started</button>;
         }
 
         // Figure out where we are and what buttons to show
@@ -30,7 +30,7 @@ const Navigation = (props) => {
 
             // If we're anywhere else and need the FAQ and start/reset buttons
             default:
-                return <><button onClick={handleClick} name={("faq")}>What is this?</button>{but}</>;
+                return <><button onClick={handleClick} name={("faq")}>What's this?</button>{but}</>;
         }
     }
 

@@ -18,6 +18,7 @@ p, i {
 
 b {
   color: red;
+  font-size: 1.3rem;
 }
 
 a, a:visited {
@@ -152,7 +153,7 @@ button:hover {
     height: 20vh;
   }
 
-  p {
+  p, b {
     font-size: 2rem;
   }
 

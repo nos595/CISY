@@ -8,6 +8,36 @@ const Content = (props) => {
         switch(props.page){
             // The FAQ
             case "faq":
+                // Calculate time since dev's last smoke
+                let last = Math.floor(Date.now()/1000) - 1609441463;
+                let tim = "second";
+                if(last > 60){
+                    last/=60;
+                    tim = "minute";
+                    if(last > 60){
+                        last/=60;
+                        tim = "hour";
+                        if(last > 24){
+                            last/=24;
+                            tim = "day";
+                            if(last > 30.4375){
+                                last/=30.4375;
+                                tim = "month";
+                                if(last > 12){
+                                    last/=12;
+                                    tim = "year";
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                // Format the time since dev's last smoke
+                last = Math.floor(last);
+                if(last > 1){tim+="s";}
+                let txt = last + " " + tim;
+
                 return <p>
                 <b>What is this?</b><br />
                 This is CISY! A very simple, no-nonsense tool to help you quit smoking. It's not fool-proof and requires willpower, but it's here to help.<br /><br />
@@ -22,7 +52,7 @@ const Content = (props) => {
                 <b>This is free?</b><br />
                 Absolutely! Smoking is expensive enough, quitting shouldn't cost a penny. <i>If</i> you're feeling generous or appreciative however, donations are welcome through <a href={("http://paypal.me/jonmbarton")} target={("new")}>PayPal</a> to help with hosting costs. A couple of quid goes a long way to keeping the site online as I don't have the funds to host this indefinitely. This is <i>entirely</i> optional though!<br /><br />
                 <b>So did it work for you?</b><br />
-                So far, so good! I'll keep this updated.<br /><br />
+                So far, so good! It's been {txt} since my last smoke. =)<br /><br />
                 <b>Cookies?</b><br />
                 Nah, I'm not interested in tracking you or selling you anything. Cookies are for eating.<br />For the site to function, it stores two bits of info on your device - the time of your next cigarette and the length of the wait time - that's it. If you want to get rid of that, just click reset and I'll wipe everything.<br />The code is freely available on <a href={("https://github.com/nos595/CISY")} target={("new")}>GitHub</a> for anyone inclined to dig through it.<br /><br />
                 <b>Can I hire you?</b><br />
